@@ -1,14 +1,6 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './app/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './content/**/*.mdx',
-  ],
-  theme: {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
   },
-  future: {
-    hoverOnlyWhenSupported: true,
-  },
-  plugins: [],
 };
