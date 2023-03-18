@@ -1,26 +1,13 @@
-# 🤖 Elon Musk AI Voice Generator
+# Elon Reads
 
-The [elonreads.com](https://elonreads.com) website allows you to generate an AI-generated voice that imitates Elon Musk.
+Elon Reads is a showcase of books that inspire Elon Musk, built using modern web technologies.
 
-## 🎙️ How it works
+## Tech Stack
 
-To use the Elon Musk AI voice generator, simply visit [elonreads.com](https://elonreads.com) and input your desired text prompt into the text box provided. Once you hit the "Generate Elon Musk voice" button, the AI model will begin processing your text and generate a voice that sounds like Elon Musk reading your text.
+The frontend of the website is built using Next.js, TypeScript, and Tailwind CSS, while the backend is powered by a MySQL database from PlanetScale. This combination of technologies provides a fast, scalable, and responsive user experience for visitors to the website.
 
-## 🧠 The Technology
+## About Me
 
-The Elon Musk AI voice generator uses state-of-the-art machine learning and natural language processing techniques to generate the voice. The underlying model is based on the latest research in the field of text-to-speech synthesis, and is constantly being updated and improved to produce the most accurate and realistic voice possible.
+My name is Jan, and I am a developer and entrepreneur passionate about creating innovative solutions that make a positive impact in the world. With Elon Reads, I hope to inspire others to read and learn from the books that have influenced one of the most visionary leaders of our time.
 
-## 🌟 Features
-
-- Generate an AI-generated voice that sounds like Elon Musk
-- Input any text prompt to generate a voice recording
-- Easy to use interface
-- State-of-the-art machine learning and natural language processing technology
-
-## 🚀 Get Started
-
-Visit [elonreads.com](https://elonreads.com) to try out the Elon Musk AI voice generator for yourself. Simply input your desired text prompt and hit the "Generate Elon Musk voice" button to hear your text spoken in Elon Musk's voice.
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+📚🚀
