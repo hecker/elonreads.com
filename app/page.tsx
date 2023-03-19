@@ -20,8 +20,6 @@ async function getBooks() {
   return data;
 }
 
-export const dynamic = "force-dynamic";
-
 export default async function HomePage() {
   let entries;
   try {
@@ -44,9 +42,9 @@ export default async function HomePage() {
       </p>
 
       {entries?.map((book) => (
-        <div key={book.id} className="py-8">
-          <div className="flex items-center rounded-lg bg-white shadow-lg overflow-hidden">
-            <div className="md:w-1/3">
+        <div key={book.id} className="py-8 md:flex">
+          <div className="md:flex items-center rounded-lg bg-white shadow-lg overflow-hidden">
+            <div className="md:w-1/3 mb-4 md:mb-0">
               <Image
                 src={book.cover}
                 alt="Placeholder Image"
