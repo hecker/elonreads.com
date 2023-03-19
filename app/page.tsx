@@ -46,7 +46,7 @@ export default async function HomePage() {
       {entries?.map((book) => (
         <div key={book.id} className="py-8">
           <div className="flex items-center rounded-lg bg-white shadow-lg overflow-hidden">
-            <div className="w-1/2 md:w-1/3">
+            <div className="md:w-1/3">
               <Image
                 src={book.cover}
                 alt="Placeholder Image"
@@ -55,7 +55,7 @@ export default async function HomePage() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="w-1/2 md:w-2/3 px-6 py-4">
+            <div className="md:w-2/3 px-6 py-4">
               <h2 className="text-2xl font-bold mb-2">{book.name}</h2>
               <p className="text-gray-700 text-base">{book.description}</p>
               <div className="divide-y divide-gray-400 md:divide-y-8"></div>
