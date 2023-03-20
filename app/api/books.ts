@@ -6,9 +6,9 @@ interface BooksTable {
   name: string;
   description: string;
   cover: string;
-  quote: string | null;
+  quote: string;
   source: string | null;
-  date: string | null;
+  date: string;
   amazon: string | null;
 }
 
@@ -17,9 +17,9 @@ export interface Book {
   name: string;
   description: string;
   cover: string;
-  quote: string | null;
+  quote: string;
   source: string | null;
-  date: string | null;
+  date: string;
   amazon: string | null;
 }
 
