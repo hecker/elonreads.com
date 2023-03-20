@@ -52,7 +52,7 @@ export default async function HomePage() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="md:w-2/3 md:py-4 py-4">
+            <div className="md:w-2/3 md:py-4 py-4 px-6">
               <h2 className="text-2xl font-bold mb-2">{book.name}</h2>
               <p className="text-base whitespace-pre-line">
                 {book.description}
