@@ -15,6 +15,7 @@ async function getBooks() {
       "date",
       "amazon",
     ])
+    .orderBy("date", "desc")
     .execute();
   return data;
 }
