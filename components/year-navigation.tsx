@@ -15,7 +15,7 @@ export const YearNavigation: React.FC<YearNavigationProps> = ({ years }) => {
   };
 
   return (
-    <nav className="overflow-x-auto whitespace-nowrap sticky top-0 bg-white z-10">
+    <nav className="overflow-x-auto whitespace-nowrap sticky top-0 bg-white dark:bg-black z-10 mb-4">
       <ul className="flex space-x-4 w-full">
         {years.map((year) => (
           <li
