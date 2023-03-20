@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Elon Reads",
     images: [
       {
-        url: "https://hecker.vc/images/og.jpg",
+        url: "https://hecker.vc/images/og.png",
         width: 1920,
         height: 1080,
       },
