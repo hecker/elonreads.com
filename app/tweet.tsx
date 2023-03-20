@@ -33,7 +33,7 @@ const Tweet: React.FC<TweetProps> = ({ text, source, date }) => {
       </div>
       <p className="my-2">{text}</p>
       <div className="text-[#a8aaad] text-sm">
-        Tweeted on{" "}
+        {source.startsWith("https://twitter") ? "Tweeted on" : "Posted on"}{" "}
         {new Date(date).toLocaleDateString("en-US", {
           month: "long",
           day: "numeric",
