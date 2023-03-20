@@ -59,7 +59,7 @@ export default async function HomePage() {
             data-year={recommendedAtYear}
             className="py-8 md:flex"
           >
-            <div className="md:flex items-center rounded-lg shadow-lg overflow-hidden">
+            <div className="md:flex items-center rounded shadow-lg overflow-hidden">
               <div className="w-1/2 md:w-1/3 mb-4 md:mb-0 pl-6 md:pl-0">
                 <Image
                   src={book.cover}
