@@ -1,13 +1,22 @@
 import "./global.css";
 import clsx from "clsx";
-import { Libre_Baskerville } from "next/font/google";
+import localFont from "next/font/local";
 import { Metadata } from "next";
 
-const baskerville = Libre_Baskerville({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-baskerville",
-  display: "swap",
+const ddin = localFont({
+  variable: "--font-d-din",
+  src: [
+    {
+      path: "../public/fonts/d-din.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/d-din-bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -66,11 +75,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        "text-black bg-white dark:text-white dark:bg-[#111010]",
-        baskerville.variable
+        "text-black bg-white dark:text-white dark:bg-black",
+        ddin.variable
       )}
     >
-      <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto">
+      <body className="antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto font-body font-ddin">
         <main className="flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0">
           {children}
         </main>

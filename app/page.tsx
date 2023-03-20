@@ -1,6 +1,5 @@
 import { queryBuilder } from "app/api/books";
 import Image from "next/image";
-import Link from "next/link";
 import Tweet from "./tweet";
 
 async function getBooks() {
@@ -43,7 +42,7 @@ export default async function HomePage() {
 
       {entries?.map((book) => (
         <div key={book.id} className="py-8 md:flex">
-          <div className="md:flex items-center rounded-lg bg-white shadow-lg overflow-hidden">
+          <div className="md:flex items-center rounded-lg shadow-lg overflow-hidden">
             <div className="md:w-1/3 mb-4 md:mb-0">
               <Image
                 src={book.cover}
@@ -55,8 +54,10 @@ export default async function HomePage() {
             </div>
             <div className="md:w-2/3 px-6 py-4">
               <h2 className="text-2xl font-bold mb-2">{book.name}</h2>
-              <p className="text-gray-700 text-base">{book.description}</p>
-              <div className="divide-y divide-gray-400 md:divide-y-8"></div>
+              <p className="text-base whitespace-pre-line">
+                {book.description}
+              </p>
+              <div className="divide-y divide-[#a8aaad] md:divide-y-8"></div>
               {book.quote && book.source && book.date && (
                 <div className="mt-8">
                   <Tweet

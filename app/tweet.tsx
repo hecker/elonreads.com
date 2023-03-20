@@ -26,13 +26,13 @@ const Tweet: React.FC<TweetProps> = ({ text, source, date }) => {
           <h2 className="font-bold text-lg" style={{ lineHeight: "1.2" }}>
             Elon Musk
           </h2>
-          <h2 className="text-lg text-gray-500" style={{ lineHeight: "1.2" }}>
+          <h2 className="text-lg text-[#a8aaad]" style={{ lineHeight: "1.2" }}>
             @elonmusk
           </h2>
         </Link>
       </div>
-      <p className="text-gray-700 my-2">{text}</p>
-      <div className="text-gray-500 text-sm">
+      <p className="my-2">{text}</p>
+      <div className="text-[#a8aaad] text-sm">
         Tweeted on{" "}
         {new Date(date).toLocaleDateString("en-US", {
           month: "long",

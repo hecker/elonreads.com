@@ -6,7 +6,11 @@ module.exports = {
     "./content/**/*.mdx",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        ddin: ['var(--font-d-din)'],
+      },
+    },
   },
   plugins: [],
 };
