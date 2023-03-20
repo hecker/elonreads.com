@@ -22,7 +22,7 @@ async function getBooks() {
   return data;
 }
 
-export function GitHubIcon() {
+function GitHubIcon() {
   return (
     <svg
       width="20"
